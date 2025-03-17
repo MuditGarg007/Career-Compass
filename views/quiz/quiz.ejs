@@ -1,0 +1,215 @@
+<% layout("/layouts/boilerplate") %>
+
+<body>
+    <div class="row">
+        <div class="col-8 offset-2">
+            <header>
+                <h3>Career Guidance Form</h3>
+            </header>
+            <div class="container">
+                <form action="/results" method="POST">
+                    <!-- Question 1: Interests -->
+                    <div class="ques-container">
+                    <div class="mb-5">
+                        <label class="form-label">Which of the following fields excites you the most?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="field" id="field-technology" value="Technology" required>
+                            <label class="form-check-label" for="field-technology">Technology</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="field" id="field-arts" value="Arts and Design">
+                            <label class="form-check-label" for="field-arts">Arts and Design</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="field" id="field-business" value="Business and Finance">
+                            <label class="form-check-label" for="field-business">Business and Finance</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="field" id="field-healthcare" value="Healthcare">
+                            <label class="form-check-label" for="field-healthcare">Healthcare</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="field" id="field-education" value="Education">
+                            <label class="form-check-label" for="field-education">Education</label>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Question 2: Activities -->
+                    <div class="ques-container">
+                    <div class="mb-5">
+                        <label class="form-label">What type of activities do you enjoy the most?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="activities" id="activities-problems" value="Solving problems and puzzles" required>
+                            <label class="form-check-label" for="activities-problems">Solving problems and puzzles</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="activities" id="activities-creating" value="Creating or designing things">
+                            <label class="form-check-label" for="activities-creating">Creating or designing things</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="activities" id="activities-helping" value="Working with people or helping others">
+                            <label class="form-check-label" for="activities-helping">Working with people or helping others</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="activities" id="activities-analyzing" value="Analyzing data or conducting research">
+                            <label class="form-check-label" for="activities-analyzing">Analyzing data or conducting research</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="activities" id="activities-managing" value="Managing or leading projects">
+                            <label class="form-check-label" for="activities-managing">Managing or leading projects</label>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Question 3: Strongest Skill -->
+                    <div class="ques-container">
+                    <div class="mb-5">
+                        <label class="form-label">Which of the following best describes your strongest skill?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="strongestSkill" id="skill-technical" value="Technical skills" required>
+                            <label class="form-check-label" for="skill-technical">Technical skills (e.g., coding, engineering)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="strongestSkill" id="skill-communication" value="Communication skills">
+                            <label class="form-check-label" for="skill-communication">Communication and interpersonal skills</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="strongestSkill" id="skill-creative" value="Creative skills">
+                            <label class="form-check-label" for="skill-creative">Creative skills (e.g., writing, design)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="strongestSkill" id="skill-analytical" value="Analytical skills">
+                            <label class="form-check-label" for="skill-analytical">Analytical skills (e.g., data analysis, critical thinking)</label>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Question 4: Skill to Improve -->
+                    <div class="ques-container">
+                    <div class="mb-5">
+                        <label for="improve-skill" class="form-label">What is one skill you want to improve or learn?</label>
+                        <input type="text" class="form-control" id="improve-skill" name="improveSkill" required>
+                    </div>
+                    </div>
+                    <!-- Question 5: Motivation -->
+                    <div class="ques-container">
+                    <div class="mb-5">
+                        <label class="form-label">What motivates you most in a career?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="motivation" id="motivation-salary" value="High salary" required>
+                            <label class="form-check-label" for="motivation-salary">High salary and financial stability</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="motivation" id="motivation-helping" value="Helping others">
+                            <label class="form-check-label" for="motivation-helping">Helping others and making a difference</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="motivation" id="motivation-projects" value="Exciting projects">
+                            <label class="form-check-label" for="motivation-projects">Working on exciting and innovative projects</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="motivation" id="motivation-balance" value="Work-life balance">
+                            <label class="form-check-label" for="motivation-balance">Stability and work-life balance</label>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Question 6: Work Environment -->
+                    <div class="ques-container">
+                    <div class="mb-5">
+                        <label class="form-label">What type of work environment do you prefer?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="workEnvironment" id="environment-office" value="Structured office" required>
+                            <label class="form-check-label" for="environment-office">A structured office environment</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="workEnvironment" id="environment-remote" value="Remote">
+                            <label class="form-check-label" for="environment-remote">Remote or flexible work</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="workEnvironment" id="environment-startups" value="Startups">
+                            <label class="form-check-label" for="environment-startups">Dynamic and fast-paced startups</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="workEnvironment" id="environment-collaborative" value="Collaborative">
+                            <label class="form-check-label" for="environment-collaborative">Collaborative team settings</label>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Question 7: Personality -->
+                    <div class="ques-container">
+                    <div class="mb-5">
+                        <label class="form-label">How would you describe your personality?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="personality" id="personality-introverted" value="Introverted" required>
+                            <label class="form-check-label" for="personality-introverted">Introverted and analytical</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="personality" id="personality-extroverted" value="Extroverted">
+                            <label class="form-check-label" for="personality-extroverted">Extroverted and sociable</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="personality" id="personality-creative" value="Creative">
+                            <label class="form-check-label" for="personality-creative">Creative and imaginative</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="personality" id="personality-organized" value="Organized">
+                            <label class="form-check-label" for="personality-organized">Organized and detail-oriented</label>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Question 8: Work Style -->
+                    <div class="ques-container">
+                    <div class="mb-5">
+                        <label class="form-label">Do you enjoy working independently or in a team?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="workStyle" id="workstyle-independent" value="Independently" required>
+                            <label class="form-check-label" for="workstyle-independent">Independently</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="workStyle" id="workstyle-team" value="In a team">
+                            <label class="form-check-label" for="workstyle-team">In a team</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="workStyle" id="workstyle-both" value="Mix of both">
+                            <label class="form-check-label" for="workstyle-both">A mix of both</label>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Question 9: Career Goal -->
+                    <div class="ques-container">
+                    <div class="mb-5">
+                        <label for="career-goal" class="form-label">What is your biggest career goal in the next 5 years?</label>
+                        <textarea class="form-control" id="career-goal" name="careerGoal" rows="5" required></textarea>
+                    </div>
+                    </div>
+                    <!-- Question 10: Career Challenges -->
+                    <div class="ques-container">
+                    <div class="mb-5">
+                        <label for="career-challenges" class="form-label">What challenges do you face when choosing or advancing in a career?</label>
+                        <textarea class="form-control" id="career-challenges" name="careerChallenges" rows="5" required></textarea>
+                    </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Get Career Advice</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector("form").addEventListener("submit", function() {
+    // Create the loading overlay
+    let loadingOverlay = document.createElement("div");
+    loadingOverlay.classList.add("loading-overlay");
+
+    // Create the spinner
+    let spinner = document.createElement("div");
+    spinner.classList.add("spinner");
+
+    // Add spinner to the overlay
+    loadingOverlay.appendChild(spinner);
+
+    // Append overlay to body
+    document.body.appendChild(loadingOverlay);
+});
+
+    </script>
+</body>
+

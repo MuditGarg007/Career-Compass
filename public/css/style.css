@@ -1,0 +1,230 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important ;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    height: 5rem;
+    background-color: white ;
+}
+
+.nav-link:hover{
+    color: #e25822 !important;
+}
+
+.navbar-nav{
+    background-color: white !important;
+}
+
+.fa-compass{
+    color: #e25822;
+}
+
+/* footer */
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+
+.f-info-brand,
+.f-info-socials, 
+.f-info-links{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.f-info-socials i{
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.f-info{
+    display: flex;
+    height: 8rem;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.container {
+    flex: 1;
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+h2,h3{
+    color: #e25822 !important;
+    font-weight: 700 !important;
+}
+
+.btn {
+    background-color: #e25822 !important;
+    color: white !important;
+    cursor: pointer !important;
+    border: none !important;
+}
+
+
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-label{
+    font-weight: 600;
+}
+
+.form-check-label{
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-check-input:checked {
+    background-color: #e25822 !important; 
+    border-color: #e25822 !important; 
+}
+
+.form-check-input:hover {
+    border-color: #e2582287; 
+}
+
+
+ul{
+    margin-bottom: 1rem;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    margin-left: 3rem;
+    margin-top: 3rem;
+    padding: 1rem;
+    border-radius: 20px !important;
+    width: 275px !important;
+    height: 350px !important;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.7s ease !important;
+}
+
+.card:hover {
+    background-color: #ef7c4e 
+  }
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-body {
+flex-grow: 1; /* Allows the content to expand and push the button down */
+display: flex;
+flex-direction: column; /* Needed for vertical alignment within the body */
+}
+
+.card-text {
+flex-grow: 1; /* This will allow the text to take up available space, pushing the button down */
+}
+
+.card-btn {
+margin-top: auto; /* Pushes the button to the bottom */
+border-radius: 30px !important;
+width: 80%;
+ /* Initial button background color */
+ /* Initial button text color */
+transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease !important; 
+}
+
+.card:hover .card-btn {
+    background-color: #ffffff !important; /* Button background color on hover */
+    color: #ef7c4e !important; /* Button text color on hover (can be changed if needed) */
+}
+
+.card-btn:hover{
+    transform: scale(1.05) !important;
+}
+
+.card-title{
+    font-weight: 700 !important;
+}
+
+.card-title,
+.card-text {
+  color: #000000; /* Initial text color */
+  transition: color 0.3s ease !important; /* Smooth transition for text color */
+}
+
+.card:hover .card-title,
+.card:hover .card-text {
+  color: #ffffff; /* Text color on hover */
+}
+
+.subheading{
+    margin-bottom: 2rem;
+}
+
+.subheading p {
+    padding-left: 1.5rem;
+}
+
+/* Loading Overlay */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Spinner Animation */
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 6px solid #e25822;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Spin Animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+

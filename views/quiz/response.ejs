@@ -1,0 +1,57 @@
+<%- layout("/layouts/boilerplate") %>
+<body>
+    <div class="row">
+        <div class="col-10 offset-1">
+            <div class="response-container">
+                <h2>Here's what we suggest:</h2>
+
+                <div class="card-container">
+                    <% for(let i=0; i<careerList.length; i++) { %>
+                        <% const title = careerList[i].split(':')[0]; %>
+                        <% const desc = careerList[i].split(':')[1] %>
+                        <div class="card">
+                            <div class="card-body">
+                            <h5 class="card-title"><%= title %></h5>
+                            <p class="card-text"><%= desc %></p>
+                            <form action="/career/<%= title %>" method="post">
+                                <div class="button-container">
+                                    
+                                    <button type="submit" class="card-btn btn btn-primary">Explore Career</button>
+                                    
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    <%}%>
+
+                </div>
+                <br><br><br>
+                <a href="/"><button class="btn">Back to Home</button></a>
+    
+            </div>
+        </div>
+    </div>  
+    
+    <script>
+document.querySelectorAll(".card-btn").forEach(button => {
+    button.addEventListener("click", function() {
+        // Create the loading overlay
+        let loadingOverlay = document.createElement("div");
+        loadingOverlay.classList.add("loading-overlay");
+
+        // Create the spinner
+        let spinner = document.createElement("div");
+        spinner.classList.add("spinner");
+
+        // Add spinner to the overlay
+        loadingOverlay.appendChild(spinner);
+
+        // Append overlay to body
+        document.body.appendChild(loadingOverlay);
+    });
+});
+
+    </script>
+</body>
+
+

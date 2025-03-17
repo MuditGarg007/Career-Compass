@@ -1,0 +1,189 @@
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Section Styling */
+h2, h3, h4 {
+    color: #ff7f32;
+    font-weight: bold;
+}
+
+.welcome-section, .about-section, .importance-section, .slider-section, .testimonials-section {
+    padding: 60px 0;
+}
+
+/* Welcome Section */
+.welcome-section {
+    background-color: #fff;
+    text-align: center;
+}
+
+.welcome-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.welcome-text {
+    font-size: 1.25rem;
+    color: #555;
+}
+
+.btn-primary {
+    background-color: #ff7f32;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #e56a2b;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.about-left {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.about-right img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Importance Section */
+.importance-section {
+    background-color: #fff;
+    color: #333;
+}
+
+.importance-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.importance-list li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.importance-list li:before {
+    content: "✔️";
+    position: absolute;
+    left: -25px;
+}
+
+/* Career Path Sliders */
+.slider-section {
+    background-color: #ff7f32;
+    color: white;
+    text-align: center;
+    padding: 100px;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    animation: slide-animation 30s linear infinite; /* Slowed down the animation */
+}
+
+.slider-item {
+    min-width: 300px;
+    padding: 30px;
+    background-color: #fff;
+    color: #ff7f32;
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.slider-item:hover {
+    transform: scale(1.05);
+}
+
+
+.start-btn{
+    border: solid #e56a2b 1px !important;
+    border-radius: 30px !important;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease !important;
+}
+
+.start-btn:hover{
+    background-color: #f5f5f5 !important;
+    color: #e56a2b !important;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+.testimonials-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 12s ease-in-out infinite;
+}
+
+.testimonial-item {
+    max-width: 400px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonial-item p {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial-item strong {
+    display: block;
+    margin-top: 15px;
+    color: #ff7f32;
+    font-weight: bold;
+}
+
+.contact-section{
+    padding-top: 5rem;
+}
+
+.slider-head{
+    color: white !important;
+    margin-bottom: 3rem;
+}
+
+
+.testimonials-head{
+    margin-left: 2rem;
+}
